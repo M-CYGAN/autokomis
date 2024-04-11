@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autokomis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Autokomis</h1>
+    </header>
+    <section>
+        <fieldset>
+            <legend>Dane samochodu</legend>
+            <label for="marka">Marka samochodu:</label>
+            <select name="marka" id="marka">
+              <optgroup label="Szwedzkie samochody">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+              </optgroup>
+              <optgroup label="Niemieckie samochody">
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+                <option value="bmw">BMW</option>
+              </optgroup>
+            </select>
+            <label for="model">Model samochodu:</label>
+            <input type="text" name="model" id="model" placeholder="np. XC90"> 
+            <label for="rokP">Rok produkcji:</label>
+            <input type="number" name="rokP" id="rokP" value="2000">
+            <label for="kolor">Kolor:</label>
+            <input type="text" name="kolor" id="kolor" placeholder="np. BLUE"> 
+            <label for="przebieg">Przebieg:</label>
+            <input type="number" name="przebieg" id="przebieg"> tyś. km
+        </fieldset>
+        <button type="addCar" id="addCar">Dodaj samochód</button>
+        <button type="searchCar" id="searchCar">Wyszukaj samochód</button>
+        <button type="displayAll" id="displayAll">Wyświetl wszystko</button>
+    </section>
+    <main>
+        <ul id="displayList">
+
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; Michał Cygan</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
